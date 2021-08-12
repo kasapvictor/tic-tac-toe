@@ -3,66 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href="https://kasapvictor.ru/wp-content/themes/kasapvictor/assets/images/32x32.png" rel="shortcut icon" type="image/x-icon">
+	<link href="https://kasapvictor.ru/wp-content/themes/kasapvictor/assets/images/3256x256.png" rel="apple-touch-icon">
+
 	<style>
-    html {
-        height: 100%;
-    }
+		html {
+			height: 100%;
+		}
 
-	body {
-	    height: 100%;
-		margin: 0;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-	}
+		body {
+			height: 100%;
+			margin: 0;
+			font-family: sans-serif;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+		}
 
-    #gameCanvas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+		#gameCanvas {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 
-    .row {
-        display: flex;
-        flex-direction: row;
-    }
+		.row {
+			display: flex;
+			flex-direction: row;
+		}
 
-    .row:first-child {
-        border-top: 1px solid #000;
-    }
+		.row:first-child {
+			border-top: 1px solid #000;
+		}
 
-    .row:last-child {
-        border-bottom: 1px solid #000;
-    }
+		.row:last-child {
+			border-bottom: 1px solid #000;
+		}
 
-    .column {
-        width: 50px;
-        height: 50px;
-        border: 1px solid #000;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+		.column {
+			width: 50px;
+			height: 50px;
+			border: 1px solid #000;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-    .column:first-child {
-        border-left: 2px solid #000;
-    }
+		.column:first-child {
+			border-left: 2px solid #000;
+		}
 
-    .column:last-child {
-        border-right: 2px solid #000;
-    }
+		.column:last-child {
+			border-right: 2px solid #000;
+		}
 
-    .column:hover {
-        background: #eeeeee;
-    }
+		.column:hover {
+			background: #eeeeee;
+		}
 	</style>
 </head>
 <body>
-    <div id="gameCanvas"></div>
-    <button id="resetBtn">Reset</button>
-    <script src="./app.bundle.js"></script>
+<div id="gameCanvas"></div>
+<button id="resetBtn">Reset</button>
+<script src="./app.bundle.js"></script>
 </body>
 </html>

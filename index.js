@@ -11,10 +11,10 @@ function render() {
     let html = '';
 
     for (let i = 0; i < 3; i++) {
-        html += '<div class="row">';
+        html += `<div class="row">`;
 
         for (let j = 0; j < 3; j++) {
-            html += `<div class="column">${game.getFieldValue(i, j) || ''}</div>`;
+            html += `<div class="column cell" data-row-index="${i}" data-cell-index="${j}">${game.getFieldValue(i, j) || ''}</div>`;
         }
 
         html += '</div>';

@@ -5,7 +5,9 @@
     "scripts": {
         "test": "mocha -r ./test/setup-mocha.js",
         "start": "webpack-dev-server",
-        "postinstall": "node postinstall.js"
+        "build": "webpack",
+        "postinstall": "node postinstall.js",
+        "browser": "browser-sync start --server --port 4321 --no-notify  --files \"**/*.*\""
     },
     "author": "",
     "engines": {
